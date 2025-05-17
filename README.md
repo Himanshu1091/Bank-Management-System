@@ -1,0 +1,1 @@
+these is a react based bank management system project containg a lot of pages.

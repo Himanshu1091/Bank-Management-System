@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+// these is file is all about the about code in the about project
 // import './about.css';
 import image1 from '../Images/visaP.png';
 import image from '../Images/credit1.png';

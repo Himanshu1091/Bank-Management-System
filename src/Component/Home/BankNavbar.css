@@ -1,0 +1,188 @@
+.hero-image img {
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  /* Set the height of the carousel container */
+.suyash img {
+  height: 90vh; /* You can adjust this value based on your design */
+  object-fit: cover; /* Ensures the image fills the container without stretching or distorting */
+  width: 100%; /* Ensures the image covers the full width */
+}
+
+/* Optional: If you want to control the carousel container's height to avoid scrolling */
+.carousel-inner {
+   /* Adjust this to your desired height */
+  overflow: hidden; /* Prevents scrolling within the carousel */
+}
+.carousel-caption {
+  position: absolute;
+  
+  
+  transform: translateX(-50%);
+  text-align: center;
+ 
+  padding: 10px;
+  border-radius: 5px;
+  color: black;
+ 
+}
+.imglogocd{
+  width: 50px;
+  float: left;
+  clear: both;
+ 
+}
+.logo1 h5{
+  width: 50px;
+  float: left;
+  
+ 
+}
+.logo1 form{
+ 
+  float:right;
+ 
+}
+.carousel-item h1{
+  color: black;
+
+}
+.carousel-item p{
+  color: black;
+
+}
+/* General hover effects */
+.card:hover {
+  transform: scale(1.05); /* Slightly enlarges the card */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds a shadow for depth */
+  transition: all 0.3s ease-in-out; /* Smooth transition */
+}
+
+.card-body h5:hover {
+  color: #007bff; /* Change title color on hover */
+  transition: color 0.3s ease-in-out;
+}
+
+.card-footer .btn:hover {
+  background-color: #0056b3; /* Change button background color */
+  color: #fff; /* Ensure text remains visible */
+  transition: background-color 0.3s ease-in-out;
+}
+
+.carousel-caption h1:hover,
+.carousel-caption p:hover,
+.carousel-caption a.btn:hover {
+  color: #ffcc00; /* Highlight text and buttons in carousel */
+  transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.carousel-caption a.btn:hover {
+  background-color: #333; /* Darken button background */
+  border-color: #333; /* Adjust button border */
+}
+/* Smart hover effect for links and dropdown items */
+
+/* Optional: Navbar brand hover effect */
+.imglogocd:hover {
+  transform: scale(1.1); /* Slight zoom effect */
+  transition: transform 0.3s ease-in-out;
+}
+/* Shadow for the carousel */
+.carousel-inner img {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+
+/* Shadow for carousel captions */
+.carousel-caption {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+}
+
+/* Shadow for cards */
+.card {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 10px;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 6px 15px rgba(0, 0, 0, 0.7);
+}
+
+/* Shadow for buttons */
+.btn {
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+.btn:hover {
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Shadow for carousel controls */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.5));
+}
+
+/* Optional: Margin for spacing between cards */
+.card + .card {
+  margin-top: 20px;
+}
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.form-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+/* Styles for the Modal Form */
+.form-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5); /* Overlay effect */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1050;
+}
+
+.form-content {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  width: 400px;
+}
+
+.carousel-caption h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  color: white;
+}
+
+.carousel-caption p {
+  font-size: 1.2rem;
+  color: white;
+}
+
+.carousel-caption .btn {
+  padding: 10px 20px;
+  font-size: 1rem;
+}

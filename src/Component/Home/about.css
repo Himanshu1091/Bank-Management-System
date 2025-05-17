@@ -1,0 +1,52 @@
+
+.custom-btn {
+    border-radius: 8px; /* Add rounded corners */
+    transition: all 0.3s ease; /* Smooth transitions */
+    
+  }
+  .utk{
+    background-color: #f3e4d3;
+  }
+  .custom-btn:hover {
+    transform: scale(1.05); /* Slightly enlarge on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
+  }
+  
+  .stages{
+    background-color: pink;
+  }
+
+  .cardcaurasel {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .cardcaurasel:hover {
+    transform: translateY(-5px); /* Moves the card slightly upwards */
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2); /* Adds shadow for the pop-up effect */
+  }
+
+  /* for bank form */
+
+  .bank-form {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    border: 1px solid #ddd;
+  }
+  
+  .bank-form h2 {
+    color: #333;
+  }
+  
+  .bank-form .btn-primary {
+    background-color: #FF9933; /* Saffron color */
+    border-color: #FF9933;
+  }
+  
+  .bank-form .btn-primary:hover {
+    background-color: #e68a00;
+    border-color: #e68a00;
+  }
+  
+
+  

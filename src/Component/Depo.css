@@ -1,0 +1,318 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  .app {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .header {
+    background-color: #ff6200;
+    color: #fff;
+    padding: 20px 10px;
+  }
+  
+  .header h1 {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .header p {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  .fd-calculator {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    margin: 20px auto;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease-in-out;
+  }
+  
+  .fd-calculator:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  }
+  
+  .input-section label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .input-section input,
+  .input-section select {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  .interest-payout-buttons {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .interest-payout-buttons button {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    background-color: #fff;
+    color: #333;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .interest-payout-buttons button:hover {
+    background-color: #ff6200;
+    color: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  .interest-payout-buttons button.active {
+    background-color: #ff6200;
+    color: #fff;
+    border-color: #ff6200;
+  }
+  
+  .result-section {
+    text-align: left;
+    margin-top: 20px;
+  }
+  
+  .result-section h3 {
+    margin-bottom: 10px;
+  }
+  
+  .result-section p {
+    margin: 5px 0;
+  }
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f7f7f7;
+  color: #333;
+}
+
+.app {
+  text-align: center;
+  padding: 20px;
+  width: 100%;
+}
+
+.header {
+  background-color: #004080;
+  color: #fff;
+  padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.header h1 {
+  font-size: 24px;
+  margin: 0;
+}
+
+.header p {
+  margin: 5px 0 0;
+  font-size: 14px;
+}
+
+.card-section {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px auto;
+  flex-wrap: wrap;
+  padding: 0 20px;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.card {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 20px;
+  width: 300px;
+  text-align: left;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.card h2 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card p {
+  margin-bottom: 10px;
+  font-size: 14px;
+  color: #666;
+}
+
+.card ul {
+  margin: 0 0 20px;
+  padding-left: 20px;
+  color: #444;
+  font-size: 14px;
+}
+
+.card li {
+  margin-bottom: 5px;
+}
+
+.card button {
+  background-color: #004080;
+  color: #fff;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0066cc;
+}
+
+.card button:active {
+  background-color: #003366;
+}
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f7f7f7;
+    color: #333;
+  }
+  
+  /* App container styles */
+  .depo-app {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Header styles */
+  .depo-header {
+    background-color: #ff6200;
+    color: #fff;
+    padding: 20px 10px;
+  }
+  
+  .depo-header-title {
+    font-size: 24px;
+    margin: 0;
+  }
+  
+  .depo-header-description {
+    margin: 5px 0 0;
+    font-size: 14px;
+  }
+  
+  /* Card section styles */
+  .depo-card-section {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px auto;
+    flex-wrap: wrap;
+    padding: 0 20px;
+    box-sizing: border-box;
+    width: 100%;
+  }
+  
+  /* Card styles */
+  .depo-card {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    text-align: left;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .depo-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  /* Card Image styles */
+  .depo-card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 15px;
+  }
+  
+  /* Card title and description styles */
+  .depo-card-title {
+    font-size: 20px;
+    margin-bottom: 10px;
+  }
+  
+  .depo-card-description {
+    margin-bottom: 10px;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .depo-card-detailed-description {
+    font-size: 14px;
+    color: #444;
+    margin-bottom: 20px;
+    line-height: 1.5;
+  }
+  
+  /* Features list styles */
+  .depo-card-features {
+    margin: 0 0 20px;
+    padding-left: 20px;
+    color: #444;
+    font-size: 14px;
+  }
+  
+  .depo-card-feature {
+    margin-bottom: 5px;
+  }
+  
+  /* Button styles */
+  .depo-card-button {
+    background-color: #ff6200;
+    color: #fff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .depo-card-button:hover {
+    background-color: #ff4500;
+  }
+  
+  .depo-card-button:active {
+    background-color: #cc5200;
+  }
+  

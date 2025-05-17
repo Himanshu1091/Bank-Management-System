@@ -1,0 +1,78 @@
+/* For Chart */
+
+/* Styling for Hover Effects and Transitions */
+.notice-box {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notice-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#LC {
+  background-color: #f8d7da;
+}
+
+#gov {
+  background-color: #d1ecf1;
+}
+
+.stat-item {
+  text-align: center;
+  padding: 10px; /* Added padding for better spacing */
+}
+
+.stat-item h5 {
+  font-weight: bold;
+  background-color: #a4dcb98c;
+}
+
+.stat-item p {
+  font-size: 1.2rem;
+}
+
+.card-header h4 {
+  margin: 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Button Digitall */
+
+/* Center-align the pill buttons */
+.pill-buttons {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+}
+
+/* Set orange outline color for the buttons */
+.pill-buttons button {
+  border-color: orange;
+  color: black;
+}
+
+/* Add hover effect */
+.pill-buttons button:hover {
+  background-color: orange;
+  border-color: black;
+  color: white;
+}
+
+/* Add margin-top to buttons placed on the new lines */
+.mt-3 {
+  margin-top: 20px;
+}
+
+/* Additional styling for better alignment */
+.Analysis {
+  padding: 20px; /* Added padding for overall container */
+}
+
+.Stat {
+  margin-bottom: 20px; /* Added margin for spacing between sections */
+}

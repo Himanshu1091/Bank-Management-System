@@ -1,0 +1,36 @@
+/* Padding for the container */
+.container {
+    padding: 20px;
+  }
+  
+
+  /* Card styling */
+  .loan-card {
+    margin-bottom: 20px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Highlighted Notice Bar */
+  .notice-bar {
+    background-color: #ffeb3b; /* Bright yellow background */
+    color: #000; /* Black text */
+    padding: 10px;
+    text-align: center;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(255, 235, 59, 0.5);
+    margin-bottom: 20px;
+    animation: glow 1.5s infinite alternate;
+  }
+  
+  @keyframes glow {
+    0% { box-shadow: 0 0 5px rgba(255, 235, 59, 0.5); }
+    100% { box-shadow: 0 0 20px rgba(255, 235, 59, 1); }
+  }
+  
+  /* Button padding */
+  .btn-padding {
+    padding: 10px 20px; /* Adjust padding as needed */
+    margin: 2%;
+  }

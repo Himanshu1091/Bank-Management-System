@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -35,4 +35,464 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+/*  */
+
+
+
+/*  */
+.navbar {
+  font-size: 14px;
+  background-color: sandybrown;
+
+  .pill-button {
+    border-radius: 30px;
+    padding: 5px 20px;
+    font-weight: bold;
+  }
+
+  #topnavig{
+    position: fixed ;
+  }
+  #midnav{
+    padding: 0%;
+  }
+
+  .Lastnav{
+    background-color: rgb(253, 226, 138);
+  }
+
+  .notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    background-color: red;
+    color: white;
+    font-size: 12px;
+    font-weight: bold;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .vertical-divider {
+    height: 25px;
+    width: 1px;
+    background-color: #ddd;
+    margin: 0 10px;
+  }
+}
+
+/* Digital Csss */
+/* HeroSection.css */
+
+/* Overall container */
+.hero-container {
+  padding: 50px 20px;
+  background-color: white;
+}
+
+/* Hero content section */
+.hero-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Pill buttons styling */
+.pill-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pill-button {
+  border-radius: 30px;
+  text-transform: capitalize;
+  font-weight: bold;
+}
+
+.hero-image {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+  transition: transform 1s ease-in-out;
+}
+
+.hero-image:hover {
+  transform: scale(1.05);
+}
+
+
+
+/* Article Section */
+.article-container {
+  margin-top: 50px;
+}
+
+.article-container .MuiTypography-h4 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.article {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.article p {
+  font-size: 1rem;
+  color: #666;
+}
+
+/* Data Section css */
+
+
+
+.data-section-container {
+  padding: 20px;
+}
+
+.notification-bar {
+  background-color: #f5f5f5;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.notification-title {
+  font-weight: bold;
+}
+
+.notification-links {
+  display: flex;
+  gap: 10px;
+}
+
+.carousel-section {
+  margin-top: 30px;
+}
+
+.carousel-card {
+  text-align: center;
+  padding: 10px;
+}
+
+.carousel-card-img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
+
+.carousel-arrow {
+  font-size: 30px;
+  color: #42a5f5;
+  cursor: pointer;
+}
+
+.carousel-arrow:hover {
+  color: #1e88e5;
+}
+
+.statistical-loan-calendar {
+  display: flex;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+.statistical-box {
+  flex: 2;
+  padding: 20px;
+  background-color: #e3f2fd;
+  border-radius: 10px;
+}
+
+.loan-box,
+.calendar-box {
+  flex: 1;
+  padding: 20px;
+  background-color: #fff3e0;
+  border-radius: 10px;
+}
+
+.calendar-image {
+  width: 100%;
+  height: auto;
+  margin-top: 10px;
+}
+
+.modal-content {
+  background-color: white;
+  padding: 20px;
+  margin: 50px auto;
+  max-width: 400px;
+  text-align: center;
+}
+   /* For Card Carousal */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  background-color: transparent; /* Ensure no background */
+  filter: invert(50%) sepia(100%) saturate(500%) hue-rotate(200deg);
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+  filter: invert(70%) sepia(100%) saturate(700%) hue-rotate(220deg);
+}
+      /* For Cahrt  */
+
+      /* Styling for Hover Effects and Transitions */
+.notice-box {
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.notice-box:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#LC {
+  background-color: #f8d7da;
+}
+
+#gov {
+  background-color: #d1ecf1;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-item h5 {
+  font-weight: bold;
+  background-color: #a4dcb98c;
+}
+
+.stat-item p {
+  font-size: 1.2rem;
+}
+
+.card-header h4 {
+  margin: 0;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+/* Buttun Digitall */
+
+/* Center-align the pill buttons */
+.pill-buttons {
+  display: flex;
+  align-items: start;
+  gap: 15px;
+}
+
+/* Set orange outline color for the buttons */
+.pill-buttons button {
+  border-color: orange;
+  color: black;
+}
+
+/* Add hover effect */
+.pill-buttons button:hover {
+  background-color: orange;
+  border-color: black;
+  color:white;
+}
+
+/* Add margin-top to buttons placed on the new lines */
+.mt-3 {
+  margin-top: 20px;
+}
+/* New Content in Datazone */
+/* Hover effects for icons and video box */
+.icon-box, .video-box {
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+}
+
+.icon-box:hover, .video-box:hover {
+  transform: scale(1.05);
+  transition: all 0.3s ease-in-out;
+}
+
+/* Video content */
+.video-box {
+  position: relative;
+  overflow: hidden;
+}
+
+.video-content {
+  height: 200px;
+  background: #000;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  opacity: 0.8;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.video-box:hover .video-content {
+  opacity: 1;
+}
+
+/* Icon box */
+.icon-box {
+  padding: 20px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+  transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.icon-box:hover {
+  background-color: #f0f0f0;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.icon-box h5 {
+  margin-top: 10px;
+  font-size: 16px;
+  color: #333;
+}
+
+/* Footer Section */
+
+.Footer{
+  background-color: rgb(255, 246, 234);
+}
+
+.Footer-title{
+  font-size: 15px;
+}
+
+.Footer-item a{
+  color: rgb(80, 80, 80);
+  font-size: small;
+}
+
+.Footer-item a:hover{
+  text-decoration: underline;
+  color: rgb(255, 166, 0);
+}
+
+.navbar-horizontal {
+  display: flex;
+}
+
+.nav-item {
+  list-style: none; 
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.last {
+  margin: 0 8px;
+}
+
+.nav-link a {
+  text-decoration: none;
+}
+
+.nav-link a:hover {
+  text-decoration: underline;
+}
+
+
+/* // Pop up css */
+
+.popup-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+}
+
+.popup-box {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.close-button {
+  background-color: #ff5c5c;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 15px;
+}
+
+.close-button:hover {
+  background-color: #ff1c1c;
+}
+
+/* Form1 / Banking page css */
+
+/* Background and General Styling */
+.banking-page {
+  background-color: #fff5e1; /* Faint Saffron */
+  padding: 40px 0;
+  min-height: 100vh;
+}
+
+/* Card Styling */
+.banking-card {
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Hover Animation */
+.banking-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+/* Title and Text Styling */
+.banking-card .card-title {
+  font-size: 1.25rem;
+  font-weight: bold;
+  color: #34495e;
+}
+
+.banking-card .card-text {
+  font-size: 1rem;
+  color: #7f8c8d;
+}
+
+/* Button Styling */
+.banking-card .btn-primary {
+  background-color: #f39c12;
+  border: none;
+}
+
+.banking-card .btn-primary:hover {
+  background-color: #e67e22;
 }

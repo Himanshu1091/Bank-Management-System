@@ -1,0 +1,266 @@
+{/* Article Section */}
+      {/* <container>
+      <div className="article-container">
+        <Typography variant="h4" gutterBottom>
+          Latest Articles
+        </Typography>
+        <Grid container spacing={3}>
+          <Grid item xs={12} md={3} className="article">
+            <Typography variant="h6">Article 1</Typography>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Grid>
+          <Grid item xs={12} md={3} className="article">
+            <Typography variant="h6">Article 2</Typography>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Grid>
+          <Grid item xs={12} md={3} className="article">
+            <Typography variant="h6">Article 3</Typography>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Grid>
+          <Grid item xs={12} md={3} className="article">
+            <Typography variant="h6">Article 4</Typography>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+          </Grid>
+        </Grid>
+      </div>
+      </container> */}
+
+
+
+      import React, { useState, useEffect } from 'react';
+import { Button, Grid, Typography } from '@mui/material';
+import { FaMobile, FaInternetExplorer, FaWhatsapp, FaCriticalRole } from 'react-icons/fa';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import image1 from '../Images/mob.png';
+import image2 from '../Images/net.png';
+import image3 from '../Images/whats.png';
+
+const HeroSection = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+
+  // Images and button labels
+  const images = [image1, image2, image3];
+  const buttons = ["Mobile Banking", "Net Banking", "WhatsApp Banking"];
+
+  // Change image every 3 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
+  // Handle button click to show the corresponding image
+  const handleButtonClick = (index) => {
+    setCurrentImageIndex(index);
+  };
+
+  return (
+    <div className="hero-container py-5">
+      <Grid container spacing={3} alignItems="center">
+        {/* Hero Text and Buttons */}
+        <Grid item xs={12} md={6}>
+          <Typography variant="h4" gutterBottom className="fw-bold">
+            DIGITAL BANKING
+            <p className="text-secondary fw-bold fs-5">Advance. Innovative. Instant</p>
+          </Typography>
+          <div className="pill-buttons mt-4">
+            {buttons.map((label, index) => (
+              <Button
+                key={index}
+                variant={currentImageIndex === index ? "contained" : "outlined"}
+                startIcon={
+                  index === 0 ? <FaMobile /> : index === 1 ? <FaInternetExplorer /> : <FaWhatsapp />
+                }
+                className={`pbtn badge rounded-pill mx-2 ${
+                  currentImageIndex === index ? "active-button" : ""
+                }`}
+                onClick={() => handleButtonClick(index)}
+              >
+                {label}
+              </Button>
+            ))}
+          </div>
+          <div className="mt-4">
+            <Button
+              variant="contained"
+              startIcon={<FaCriticalRole />}
+              className="pbtn badge rounded-pill bg-warning text-white"
+            >
+              EXPLORE DIGITAL BANKING
+            </Button>
+          </div>
+        </Grid>
+
+        {/* Image Section */}
+        <Grid item xs={12} md={6}>
+          <div className="image-container">
+            <img
+              src={images[currentImageIndex]}
+              alt="Hero"
+              className="hero-image fade-in"
+              style={{ width: "100%", maxWidth: "400px", transition: "opacity 1s ease-in-out" }}
+            />
+          </div>
+        </Grid>
+      </Grid>
+    </div>
+  );
+};
+
+export default HeroSection;
+
+
+
+
+<!-- samplw code -->
+
+
+import React, { useState } from "react";
+import { Button, Typography, Box } from "@mui/material";
+import { FaBell, FaLink, FaStar } from "react-icons/fa";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import Carousel from "react-bootstrap/Carousel";
+import Card from "@mui/material/Card";
+import CardContent from "@mui/material/CardContent";
+import CardMedia from "@mui/material/CardMedia";
+import "bootstrap/dist/css/bootstrap.min.css";
+
+
+// import './DataSection.css'; // Custom styles
+import {
+      Chart as ChartJS,
+      CategoryScale,
+      LinearScale,
+      PointElement,
+      LineElement,
+      Title,
+      Tooltip,
+      Legend,
+    } from "chart.js";
+import { Container } from "react-bootstrap";
+    
+    // Register the necessary components
+    ChartJS.register(
+      CategoryScale,
+      LinearScale,
+      PointElement,
+      LineElement,
+      Title,
+      Tooltip,
+      Legend
+    );
+
+const DataSection = () => {
+  const [setOpenModal] = useState(false);
+  const [ setSelectedCard] = useState(null);
+
+
+  
+
+  const handleOpenModal = (card) => {
+    setSelectedCard(card);
+    setOpenModal(true);
+  };
+
+
+  // Carousel settings with custom arrows
+  const cardData = [
+    { id: 1, title: "Card 1", description: "This is the first card.", image: "https://via.placeholder.com/150" },
+    { id: 2, title: "Card 2", description: "This is the second card.", image: "https://via.placeholder.com/150" },
+    { id: 3, title: "Card 3", description: "This is the third card.", image: "https://via.placeholder.com/150" },
+    { id: 4, title: "Card 4", description: "This is the fourth card.", image: "https://via.placeholder.com/150" },
+    { id: 5, title: "Card 5", description: "This is the fifth card.", image: "https://via.placeholder.com/150" },
+    { id: 6, title: "Card 6", description: "This is the sixth card.", image: "https://via.placeholder.com/150" },
+  ];
+
+  return (
+    
+    <div className="data-section-container">
+      {/* Notification Bar */}
+      <div className="notification-bar text-light bg-info">
+        <Typography variant="h6" className="notification-title ">
+          Important Notice: 1.₹ 2,000 Denomination Banknotes – Withdrawn from Circulation Reserve Bank
+        </Typography>
+        <Box className="notification-links ">
+          <Button startIcon={<FaBell />} onClick={() => handleOpenModal("notification")} className="text-light">
+            Notification 1
+          </Button>
+          <Button startIcon={<FaLink />} onClick={() => handleOpenModal("notification")} className="text-light">
+            Notification 2
+          </Button>
+        </Box>
+      </div>
+      <div className="container">
+        <p className="text-warning text-center mt-3 fw-bold text-uppercase">--------------Trending Deals--------------</p>
+        <h2 className="fw-bold text-center text-uppercase">Great Offers for <span className="fw-light">Great Experiences</span> </h2>
+      </div>
+      {/* Carousel Section */}
+      <div className="container mt-5 bg-warning p-3 ">
+      <Carousel>
+        {/* Split the cards into groups of three */}
+        {[0, 1].map((groupIndex) => (
+          <Carousel.Item key={groupIndex}>
+            <div className="d-flex justify-content-center">
+              {cardData
+                .slice(groupIndex * 3, groupIndex * 3 + 3)
+                .map((card) => (
+                  <Card
+                    key={card.id}
+                    style={{ 
+                      width: "18rem", 
+                      margin: "0 12px", 
+                      transition: "transform 0.3s, box-shadow 0.3s", 
+                      cursor: "pointer" 
+                      
+                    }}
+                    onMouseEnter={(e) => {
+                      e.currentTarget.style.transform = "scale(1.05)";
+                      e.currentTarget.style.boxShadow = "0px 8px 16px rgba(0, 0, 0, 0.2)";
+                    }}
+                    onMouseLeave={(e) => {
+                      e.currentTarget.style.transform = "scale(1)";
+                      e.currentTarget.style.boxShadow = "none";
+                    }}
+                  >
+                    <CardMedia
+                      component="img"
+                      height="140"
+                      image={card.image}
+                      alt={card.title}
+                    />
+                    <CardContent>
+                      <Typography
+                        variant="h5"
+                        component="div"
+                        className="d-flex align-items-center"
+                      >
+                        <FaStar style={{ marginRight: "10px", color: "gold" }} />
+                        {card.title}
+                      </Typography>
+                      <Typography variant="body2" color="text.secondary">
+                        {card.description}
+                      </Typography>
+                      <Button 
+                        variant="contained" 
+                        color="primary" 
+                        style={{ marginTop: "10px" }}
+                      >
+                        Learn More
+                      </Button>
+                    </CardContent>
+                  </Card>
+                ))}
+            </div>
+          </Carousel.Item>
+        ))}
+      </Carousel>
+    </div>
+    </div>
+    
+  );
+};
+
+export default DataSection;
+

@@ -1,0 +1,33 @@
+/* NRI CSS */
+.first-section {
+    background-image: url('C:\Users\himan\Downloads\Radiant Himanshu\Projects\Bank\src\Images\NRI.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+  }
+  
+  .service-card {
+    margin-bottom: 20px;
+    background-color: rgba(255, 253, 253, 0.897);
+  }
+  
+  .nri-deals-box {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .second-section {
+    background-color: #f5f5dc; /* Saffron faint */
+    padding: 40px 0;
+  }
+  
+  .third-section {
+    background-color: #f5f5dc; /* Saffron faint */
+    padding: 40px 0;
+  }
+  
+  .offer-card {
+    margin-bottom: 20px;
+  }

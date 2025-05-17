@@ -1,0 +1,81 @@
+/* Container for the entire FD calculator page */
+.fd-calculator-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f7fa;
+}
+
+/* Form styling */
+.fd-calculator-form {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 400px;
+}
+
+/* Heading */
+.fd-calculator-form h2 {
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Input groups styling */
+.fd-input-group {
+    margin-bottom: 15px;
+}
+
+.fd-input-group label {
+    display: block;
+    font-size: 14px;
+    color: #333;
+    margin-bottom: 5px;
+}
+
+.fd-input-group input {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.fd-input-group input:focus {
+    border-color: #007bff;
+}
+
+/* Button styling */
+.fd-calculate-btn {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.fd-calculate-btn:hover {
+    background-color: #0056b3;
+}
+
+/* Result display */
+.fd-result {
+    margin-top: 20px;
+    text-align: center;
+    color: #333;
+    font-size: 18px;
+    font-weight: bold;
+}
+.Fd-body{
+    background-color: rgb(255, 246, 234);
+}

@@ -1,0 +1,18 @@
+.leader-team-page {
+    background-color: #ebb9c5a4; /* Failbisuit */
+    padding: 20px;
+  }
+  
+  .leader-section-1 {
+    background-color: #e0e2d2; /* White */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  .leader-section-2 {
+    background-color: #e7e4c6; /* White */
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }

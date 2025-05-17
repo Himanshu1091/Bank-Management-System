@@ -1,0 +1,25 @@
+.business-section-1 {
+    background-image: url('C:\Users\himan\Downloads\Radiant Himanshu\Projects\Bank\src\Images\busi.png');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    padding: 20px;
+  }
+  
+ #bdc {
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 60px;
+    border-radius: 10px;
+    margin-bottom: 180px;
+    width: 100%;
+  }
+  
+  .business-section-2 {
+    background-color: #e9ecef; /* Light gray */
+    padding: 40px 0;
+  }
+  
+  .business-section-3 {
+    background-color: #f5f5dc; /* Saffron faint */
+    padding: 40px 0;
+  }
